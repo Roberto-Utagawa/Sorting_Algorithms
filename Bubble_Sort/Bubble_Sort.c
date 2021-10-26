@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int* bubble_Sort(int *array, int size)
+void bubble_Sort(int *array, int size)
 {
-    int i = 1, swap = 1, temp;
+    int i = 0, swap = 1, temp;
 
     while (swap == 1 && i < size-1)
     {
@@ -21,5 +21,4 @@ int* bubble_Sort(int *array, int size)
         }
         i++;
     }
-    return array;
 }
