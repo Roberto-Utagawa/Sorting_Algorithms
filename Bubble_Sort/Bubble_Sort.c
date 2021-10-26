@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 void bubble_Sort(int *array, int size)
 {
     int i = 0, swap = 1, temp;
