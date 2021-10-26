@@ -1,16 +1,27 @@
-void insertion_Sort(int *array, int size)
+void selection_Sort(int *array, int size)
 {
-    int temp;
-    for(int i = 1; i < size; i++)
-    {
-        int j = i;
-        temp = array[j];
+    int smaller_index, swap = 0, temp;
 
-        while(temp < array[j-1] && j > 0)
+    for(int i = 0; i < size - 1; i++)
+    {
+        int j = i + 1;
+        smaller_index = i;
+        swap = 0;
+
+        while(j < size)
         {
-            array[j] = array[j-1];
-            j--;
+            if(array[j] < array[smaller_index])
+            {
+                smaller_index = j;
+                swap = 1;
+            }   
+            j++;
         }
-        array[j] = temp;
+        if(swap == 1)
+        {
+            temp = array[smaller_index];
+            array[smaller_index] = array[i];
+            array[i] = temp;
+        }
     }
 }
