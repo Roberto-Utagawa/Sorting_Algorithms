@@ -2,7 +2,7 @@
 
 int* bubble_Sort(int *array, int size)
 {
-    int i = 1, swap = 0, temp;
+    int i = 1, swap = 1, temp;
 
     while (swap == 1 && i < size-1)
     {
