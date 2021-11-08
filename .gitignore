@@ -1,3 +1,4 @@
 exec
 exec.c
 Exec/
+.gitgnore
