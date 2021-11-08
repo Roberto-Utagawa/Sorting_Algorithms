@@ -26,6 +26,9 @@ void counting_Sort(int *array, int size)
     {
         array[i] = temp_array[i];
     }
+
+    free(temp_array);
+    free(keys);
 }
 
 //Number of possible elements in the array//

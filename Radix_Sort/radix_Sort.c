@@ -47,4 +47,7 @@ void counting_Sort_Radix(int *array, int size, int exponent)
     {
         array[i] = temp_array[i];
     }
+
+    free(temp_array);
+    free(keys);
 }
