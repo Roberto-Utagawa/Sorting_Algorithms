@@ -17,6 +17,7 @@ void bubble_Sort(int *array, int size)
                 swap = 1;
             }
         }
+        
         i++;
     }
 }
